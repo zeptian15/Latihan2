@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <!--Membuat Group View Baru Untuk Bagian Header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#3F51B5">
+        
+        <!--Membuat Image View Untuk Header-->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="#2F3E9B"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <!--Membuat TextView yang dibutuhkan-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textStyle="bold"
+            android:textSize="7pt"
+            android:layout_marginTop="50px" />
+
+    </LinearLayout>
+
+    <!--Membuat Group View Baru Untuk Bagian Body (Edit Text + Button)-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_margin="20dp"
+        android:background="#AED581"
+        android:orientation="vertical">
+
+        <!--Menambahkan Beberapa EditText Yang Akan Digunakan-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Nama"
+            android:ems="10"
+            android:inputType="textPersonName"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Password"
+            android:ems="10"
+            android:inputType="textPassword"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="15dp"
+            android:hint="Ulang Password"
+            android:ems="10"
+            android:inputType="textPassword"/>
+
+        <!--Menambahkan Button Daftar-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Daftar"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
